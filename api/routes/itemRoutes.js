@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
     });
 });
 
-router.post('/', (res, req) => {
+router.post('/', (req, res) => {
     const item = new Item({
         _id: mongoose.Types.ObjectId(),
         title: req.body.title,
